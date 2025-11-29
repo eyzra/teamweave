@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamWeave Consulting | Insights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="nav-trigger" class="handshake-btn"><i class="fa-solid fa-handshake"></i></div>
+    <a href="index.html" class="fixed-logo"><img src="assets/teamweave.svg" alt="TeamWeave Logo" id="brand-logo"></a>
+
+    <div id="overlay-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link"><i class="fa-solid fa-circle-arrow-right nav-icon"></i> Home</a></li>
+                <li><a href="about.html" class="nav-link"><i class="fa-solid fa-circle-arrow-right nav-icon"></i> About Us</a></li>
+                <li><a href="services.html" class="nav-link"><i class="fa-solid fa-circle-arrow-right nav-icon"></i> Services</a></li>
+                <li><a href="methodology.html" class="nav-link"><i class="fa-solid fa-circle-arrow-right nav-icon"></i> Methodology</a></li>
+                <li><a href="insights.html" class="nav-link"><i class="fa-solid fa-circle-arrow-right nav-icon"></i> Insights</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-circle-arrow-right nav-icon"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="page-header" style="background-color: var(--bg-light);">
+        <div class="container">
+            <span class="sub-heading">From the Desk of Dr. Barnabas</span>
+            <h1 style="color: var(--primary-blue);">Insights on Leadership</h1>
+            <p class="lead-text">Thoughts on management, culture, and the pursuit of excellence.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section bg-white" style="align-items: flex-start; min-height: 60vh;">
+            <div class="container">
+                
+                <!-- VIEW 1: THE GRID LIST -->
+                <div id="insights-list" class="blog-grid fade-in">
+                    
+                    <!-- Article Card 1 -->
+                    <div class="blog-card" data-article="article-1">
+                        <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop');"></div>
+                        <div class="blog-content">
+                            <span class="blog-tag">Management</span>
+                            <h3>The Myth of the "Perfect" Team</h3>
+                            <p>Why chasing perfection creates friction, and how to chase alignment instead.</p>
+                            <span class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+
+                    <!-- Article Card 2 -->
+                    <div class="blog-card" data-article="article-2">
+                        <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop');"></div>
+                        <div class="blog-content">
+                            <span class="blog-tag">Leadership</span>
+                            <h3>Principle-Centered Leadership</h3>
+                            <p>Why the highest form of leadership isn't about metrics, but about people.</p>
+                            <span class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+
+                     <!-- Article Card 3 -->
+                    <div class="blog-card" data-article="article-3">
+                        <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2070&auto=format&fit=crop');"></div>
+                        <div class="blog-content">
+                            <span class="blog-tag">Culture</span>
+                            <h3>Stop Ignoring the Vibes</h3>
+                            <p>How emotional energy impacts your bottom line more than you think.</p>
+                            <span class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIEW 2: ARTICLE CONTENTS (Hidden by default) -->
+                
+                <!-- Article 1 Content -->
+                <div id="article-1" class="article-viewer">
+                    <button class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Insights</button>
+                    <div class="article-header">
+                        <span class="blog-tag">Management</span>
+                        <h1>The Myth of the "Perfect" Team</h1>
+                        <p class="article-meta">Written by Dr. Barnabas Amu | 5 Min Read</p>
+                    </div>
+                    <div class="article-body">
+                        <p>We often look for the perfect candidate. The perfect skillset. The perfect personality fit. But in my years of consulting, I have found that the "perfect" team does not exist.</p>
+                        <h3>Alignment Over Perfection</h3>
+                        <p>What exists is <strong>Alignment</strong>. A group of imperfect people who are perfectly aligned on the mission can outperform a group of superstars who are pulling in different directions.</p>
+                        <p>When we stop looking for perfection, we can start building texture. We can appreciate that one person's weakness is another person's strength, and that is where the "weave" happens.</p>
+                    </div>
+                </div>
+
+                <!-- Article 2 Content -->
+                <div id="article-2" class="article-viewer">
+                    <button class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Insights</button>
+                    <div class="article-header">
+                        <span class="blog-tag">Leadership</span>
+                        <h1>Principle-Centered Leadership</h1>
+                        <p class="article-meta">Written by Dr. Barnabas Amu | 4 Min Read</p>
+                    </div>
+                    <div class="article-body">
+                        <p>Leadership is often confused with management. Management is about things; Leadership is about people. Management is about efficiency; Leadership is about effectiveness.</p>
+                        <h3>The Human Element</h3>
+                        <p>My father taught me that if you take care of the people, the work takes care of itself. Principle-centered leadership means your decisions are guided by values, not just by quarterly profits.</p>
+                    </div>
+                </div>
+
+                <!-- Article 3 Content -->
+                <div id="article-3" class="article-viewer">
+                    <button class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Insights</button>
+                    <div class="article-header">
+                        <span class="blog-tag">Culture</span>
+                        <h1>Stop Ignoring the Vibes</h1>
+                        <p class="article-meta">Written by Dr. Barnabas Amu | 6 Min Read</p>
+                    </div>
+                    <div class="article-body">
+                        <p>We like data. We like KPIs. But you cannot measure the "vibe" of an office on a spreadsheet, yet it is the single biggest predictor of turnover.</p>
+                        <h3>Emotional Contagion</h3>
+                        <p>Leaders set the weather. If you walk in stressed, the team catches a cold. Recognizing the emotional energy of your workplace isn't "soft"—it's strategic.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="bg-dark">
+        <div class="container footer-grid">
+            <div class="contact-info">
+                 <h3>TeamWeave</h3>
+                 <p>hello@teamweave.com</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Quick Links</h4>
+                <ul><li><a href="index.html">Home</a></li><li><a href="contact.html">Contact</a></li></ul>
+            </div>
+            <div class="contact-form-placeholder"><a href="contact.html" class="btn-primary">Contact Us</a></div>
+        </div>
+        <div class="copyright">&copy; 2025 TeamWeave Consulting.</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
