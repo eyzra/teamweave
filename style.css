@@ -332,9 +332,55 @@ h2 {
 
 .center-text { text-align: center; }
 
+/* --- Stats Banner (NEW) --- */
+#stats-banner {
+    background-color: var(--primary-blue);
+    padding: 80px 0;
+    min-height: auto; /* Override default section height */
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.stat-item {
+    text-align: center;
+    color: var(--bg-white);
+    flex: 1;
+    min-width: 200px;
+}
+
+.stat-number {
+    font-family: var(--font-head);
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--accent-orange);
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Specific text styling for the location cycle */
+.location-text {
+    font-size: 2.5rem; /* Slightly smaller than numbers to fit names */
+    white-space: nowrap;
+}
+
+.stat-label {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
 /* --- Animations & Utilities --- */
 .fade-in { opacity: 0; transform: translateY(30px); transition: all 1s ease-out; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
+
 
 /* Staggered Animation for Grids */
 @keyframes fadeInUp {
@@ -593,6 +639,17 @@ footer { padding: 80px 5% 30px; position: relative; z-index: 10; }
     #overlay-nav { padding-right: 5%; justify-content: center; }
     #overlay-nav ul { text-align: center; }
     .nav-link { font-size: 2rem; }
+    .process-flow::before { left: 20px; }
+    .process-step { flex-direction: column; align-items: flex-start; margin-left: 50px; width: auto; transform: none !important; margin-bottom: 50px; }
+    .process-step:nth-child(odd) .step-card, .process-step:nth-child(even) .step-card { width: 100%; text-align: left; margin: 0; border-left: 5px solid var(--accent-orange); border-right: none; }
+    .step-number { left: 20px; transform: translate(-50%, -50%) !important; }
+    .step-connector { display: none; }
+
+    /* Stats Banner Mobile */
+    .stat-item { margin-bottom: 20px; }
+    .stat-number { font-size: 2.5rem; }
+    .location-text { font-size: 1.8rem; }
+    
     .process-flow::before { left: 20px; }
     .process-step { flex-direction: column; align-items: flex-start; margin-left: 50px; width: auto; transform: none !important; margin-bottom: 50px; }
     .process-step:nth-child(odd) .step-card, .process-step:nth-child(even) .step-card { width: 100%; text-align: left; margin: 0; border-left: 5px solid var(--accent-orange); border-right: none; }
