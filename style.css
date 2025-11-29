@@ -564,9 +564,9 @@ footer { padding: 80px 5% 30px; position: relative; z-index: 10; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 
 /* Internal Pages Layout */
-.page-header { padding-top: 150px; padding-bottom: 80px; background-color: var(--bg-light); }
+.page-header { padding-top: 150px; padding-bottom: 20px; background-color: var(--bg-light); }
 .page-header h1 { font-family: var(--font-head); font-size: 4rem; color: var(--primary-blue); margin-bottom: 20px; }
-.text-block { margin-bottom: 40px; }
+.text-block { margin-bottom: 20px; }
 .text-block h3 { font-family: var(--font-head); font-size: 2rem; margin-bottom: 15px; color: var(--primary-blue); }
 .text-block p { font-size: 1.1rem; line-height: 1.8; color: #555; margin-bottom: 20px; }
 
@@ -575,11 +575,21 @@ footer { padding: 80px 5% 30px; position: relative; z-index: 10; }
     .services-grid, .grid-2, .pricing-grid, .blog-grid, .testimonial-grid, .footer-grid { grid-template-columns: 1fr; }
     .fixed-logo { display: none; }
     .caption { font-size: 1.1rem; padding-right: 20px; }
-    .page-header h1 { font-size: 3rem; }
+    .page-header { 
+        padding-top: 120px; 
+        padding-bottom: 60px;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        min-height: auto; /* Allow auto height on mobile */
+    }
+    .page-header h1 { font-size: 2.5rem; }
     .price-card.featured { transform: scale(1); }
     .img-col { min-height: 300px; } 
     .footer-grid { text-align: center; }
-    .contact-item { justify-content: center; }
+    .contact-item{font-size: 1.2rem;}
+    .contact-item i{
+        font-size: 1.5rem;
+    }
     #overlay-nav { padding-right: 5%; justify-content: center; }
     #overlay-nav ul { text-align: center; }
     .nav-link { font-size: 2rem; }
