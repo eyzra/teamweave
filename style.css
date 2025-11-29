@@ -232,21 +232,22 @@ body {
 }
 
 .hero-captions {
-    position: absolute;
-    bottom: 80px;
-    left: 5%;
+    position: absolute; 
+    bottom: 80px; 
+    left: 5%; 
     right: 5%;
-    z-index: 1;
-    color: var(--bg-white);
-    max-width: 800px; /* Limit width for readability */
-    padding-right: 20px;
+    z-index: 1; 
+    color: var(--bg-white); 
+    max-width: 800px; 
+    padding-right: 20px; 
 }
 
 .caption {
     font-family: var(--font-body);
     font-size: 1.05rem; /* Smaller font as requested */
     font-weight: 400;
-    line-height: 1.8;   
+    line-height: 1.8; 
+    position: absolute;  
     bottom: 0;
     left: 0;
     width: 100%;
@@ -289,9 +290,11 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
+     max-width: 1200px; 
+    margin: 0 auto; 
+    width: 100%; 
+    padding-left: 2%; /* Horizontal padding */
+    padding-right: 2%;
 }
 
 /* Colors & Type */
